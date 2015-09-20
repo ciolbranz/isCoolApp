@@ -1,0 +1,10 @@
+<ion-view view-title="Tasks">
+
+  <ion-content>
+    <ion-list >
+      <ion-item ng-repeat="task in tasks" class="item item-icon-left" href="#/app/tasks/{{ task.name }}"> 
+    		<a class="icon icon-color {{task.icon}}"></a> {{ task.title }} 
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
